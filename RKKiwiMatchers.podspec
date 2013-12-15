@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   
   # NOTE: The RestKit dependency is not specified within the Podspec because this pod is designed to be exclusively linked into the unit testing bundle target. Directly specifying RestKit causes the compilation of a secondary copy of the library.
   #s.dependency 'RestKit/Testing', '>= 0.20.0'
-  s.dependency 'Kiwi', '>= 2.0.0'
+  s.dependency 'Kiwi', '>= 2.2.3'
   
   # Add Core Data to the PCH if RestKit/CoreData has been imported
   s.prefix_header_contents = <<-EOS
